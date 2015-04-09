@@ -93,7 +93,7 @@ public class ActivityMain extends ActionBarActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            StringBuilder builder = new StringBuilder();
+
             for (Tree tree : this.response.getDato()) {
                 txtNid.setText(tree.getNID());
                 txtLatitud.setText(tree.getLatitud());
